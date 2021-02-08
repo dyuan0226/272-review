@@ -36,15 +36,22 @@
     "coverage": {
       "/mnt/c/Users/david/OneDrive/Documents/CMU/2021 Spring/67373/272-review/app/models/child.rb": [
         1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        3,
+        2,
+        null,
+        1,
+        3,
         null,
         null
       ],
       "/mnt/c/Users/david/OneDrive/Documents/CMU/2021 Spring/67373/272-review/app/models/application_record.rb": [
         1,
-        1,
-        null
-      ],
-      "/mnt/c/Users/david/OneDrive/Documents/CMU/2021 Spring/67373/272-review/app/models/task.rb": [
         1,
         null
       ],
@@ -302,8 +309,12 @@
       "/mnt/c/Users/david/OneDrive/Documents/CMU/2021 Spring/67373/272-review/app/helpers/tasks_helper.rb": [
         0,
         0
+      ],
+      "/mnt/c/Users/david/OneDrive/Documents/CMU/2021 Spring/67373/272-review/app/models/task.rb": [
+        0,
+        0
       ]
     },
-    "timestamp": 1612783788
+    "timestamp": 1612784485
   }
 }
