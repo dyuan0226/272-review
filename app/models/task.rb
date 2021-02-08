@@ -1,20 +1,10 @@
-class Chore < ApplicationRecord
-  belongs_to :child
-  belongs_to :task
+class Task < ApplicationRecord
+  has_many :chores
+  has_many :children, through: :chores
 
-  validates_date :due_on
+  validates_presence_of :name
+  validates_numericality_of :points, only_integer: true, greater_than: 0
 
-  scope :by_task, -> { joins(:task).order("name") }
-  scope :chronological, -> { order("due_on") }
-    scope :pending, -> { where(completed: false) }
-    scope :done, -> { where(completed: true) }
-    scope :upcoming, -> { where('due_on >= ?', Date.current) }
-    scope :past, -> { where("due_on < ?", Date.current) }
-
-    def status
-     if self.completed
-      return "Completed"
-     end
-      return "Pending"
-  end
+  scope :alphabetical, -> { order("name") }
+    scope :active, -> { where(active: true) }
 end
